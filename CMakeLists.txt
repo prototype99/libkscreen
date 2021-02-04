@@ -27,10 +27,6 @@ include(KDEClangFormat)
 
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED Core DBus Gui Test X11Extras)
 
-# Wayland backend
-find_package(KF5Wayland ${KF5_MIN_VERSION} CONFIG REQUIRED)
-add_feature_info("KF5Wayland" KF5Wayland_FOUND "Required for building libkscreen's KWayland backend")
-
 # xrandr backend
 
 find_package(XCB COMPONENTS XCB RANDR)
